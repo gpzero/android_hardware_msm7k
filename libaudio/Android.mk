@@ -1,3 +1,4 @@
+ifneq ($(TARGET_PROVIDES_LIBAUDIO),true)
 
 ifneq ($(BUILD_TINY_ANDROID),true)
 
@@ -55,3 +56,4 @@ include $(BUILD_SHARED_LIBRARY)
 
 endif # not BUILD_TINY_ANDROID
 
+endif
